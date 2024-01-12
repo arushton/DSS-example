@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>S2 Cells on Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        #map { height: 600px; }
+        .zoom-level-control {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="zoom-level-display"></div>
+    <div id="map" style="height: 300px;"></div>
+    <!-- <script src="{{ url_for('static', filename='maps2Cells.js') }}"></script>    -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>   
+</body>
+</html>
